@@ -30,13 +30,11 @@
 			}
 
 			if (typeof options.expires === 'number') {
+			
 				var days = options.expires, t = options.expires = new Date();
 				t.setDate(t.getDate() + days);
-			}
 			
-			if (typeof options.expires === 'object') {
-				
-				console.log(options.expires);
+			} else if(typeof options.expires === 'object') {
 				
 				var expireOption = options.expires, t = options.expires = new Date();
 				
